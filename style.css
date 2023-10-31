@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 18px;
+  font-family: 'kumbh sans',sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.background {
+  width: 94rem;
+  height: 64rem;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 35rem;
+  width: 65rem;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  /* overflow: hidden; */
+}
+.icon {
+  width: 50%;
+  overflow: hidden;
+}
+.icon1 {
+  width: 50rem;
+  height: auto;
+  position: relative;
+  top: 8rem;
+  left: 24rem;
+}
+.icon2 {
+  position: absolute;
+  top: 29rem;
+  left: 6.8rem;
+  z-index: 1;
+}
+.icon3 {
+  width: 33rem;
+  position: relative;
+  top: -45rem;
+  left: -4.5rem;
+}
+
+.faq {
+  width: 50%;
+  padding: 40px;
+}
+.faq h1{
+  margin: 30px 0;
+}
+.accordian{
+  background-color: white;
+  margin-bottom: 20px;
+}
+.questions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.questions:hover{
+  color:  hsl(14, 88%, 65%);
+}
+.questions.active{
+  font-weight: bolder;
+  color: hsl(238, 29%, 16%);
+  pointer-events: none;
+
+}
+.arrowdown{
+  height: 9px;
+}
+
+.arrowdown.active{
+  transform: rotate(-180deg);
+  color: hsl(238, 29%, 16%);
+}
+
+
+.answers{
+  color:hsl(240, 6%, 50%);
+  max-height: 0px;
+  overflow: hidden;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+.answers.active{
+  max-height: fit-content;
+  padding-bottom: 30px;
+}
+
+
+@media only screen and (max-width:375px){
+  body{
+    font-size: 3rem;
+  }
+  .background{
+    height: 152rem;
+  }
+  main{
+    height: 100rem;
+    width: 80rem;
+    flex-direction: column;
+  }
+  .icon{
+    height: 20rem;
+    width: auto;
+    overflow: visible;
+  }
+  .faq{
+    width: 100%;
+  }
+  .faq h1{
+    text-align: center;
+
+  }
+  .icon1 {
+    width: 59rem;
+    height: auto;
+    top: -33rem;
+    left: 10rem;
+  }
+  .icon2 {
+    width: 23rem;
+    top: 18rem;
+    left: 16.8rem;
+    z-index: 1;
+  }
+  .icon3 {
+    width: 53rem;
+    top: -82rem;
+    left: 12.5rem;
+  }
+}
